@@ -218,3 +218,24 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ---- Day 3 assignment ----
+# Jupyter
+.ipynb_checkpoints/
+
+# data: downloaded by the notebook, not committed (the small cleaned file is allowed)
+data/*
+!data/.gitkeep
+!data/housing_clean.csv
+
+# fitted model and published data: on Hugging Face, not on GitHub
+models/*.joblib
+dataset/*.csv
+test_download/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# secrets
+kaggle.json
