@@ -1,0 +1,5 @@
+1. Why the types separate by place. Mostly age. The two older types (53 and 62 years) are in Seattle and the two newer ones (11 and 19 years) in the suburbs, following how the county grew outward. But not only age: new compact homes also appear inside Seattle (zipcode 98103), and the two newer types split by size and wealth (Eastside vs south). A cluster × decade × area table would measure how much is age alone.
+
+2. Confidence of each label. Yes. The model already gives each house's distance to all four type centres. We can add the second-nearest type and a 0–1 confidence score (1 − nearest ÷ second-nearest). A low score marks a house that sits between two types, so users can filter it out or treat it with care.
+
+3. Use case. Retrofit: the post-war bungalows, the largest (30%) and oldest (62 years) type; they are small and similar, so one retrofit package can be repeated thousands of times. New product: a compact two-storey family home (the type built today), designed as infill on bungalow plots, which are central but hold small houses on large lots.
